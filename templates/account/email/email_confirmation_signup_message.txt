@@ -1,0 +1,1 @@
+{% comment %} {% include "account/email/email_confirmation_message.txt" %} {% endcomment %}

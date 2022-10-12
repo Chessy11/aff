@@ -1,0 +1,60 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+
+
+{% block content %}
+<div class="", style="text-align: center;">
+<h1>{% trans "Enter Your Email" %}</h1>
+</div>
+{% comment %} 
+<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}" style="margin-left: 35%;">
+  {% csrf_token %}
+  {{ form.as_p }}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
+</form> {% endcomment %}
+
+</a>
+
+<div class="section">
+    <div class="container">
+        <div class="row full-height justify-content-center">
+            <div class="col-12 text-center align-self-center py-5">
+                <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                      <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                    <div class="card-3d-wrap mx-auto">
+                        <div class="card-3d-wrapper">
+                            <div class="card-front">
+                                <div class="center-wrap">
+                                    <div class="section text-center">
+                                        <h4 class="mb-4 pb-3" style="margin-right: 25%;">Get Your Webinar It's Compeletely Free
+                                        </h4>
+                                        <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}" style="width: 55%; margin-right: 65%;">
+                                            {% csrf_token %}
+                                            {% for field in form %}
+                                            {{field}}
+                                            {% endfor %}
+                                            {% if redirect_field_value %}
+                                            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+
+                                            {% endif %}
+                                        </div>	
+                                        {% comment %} <a href="#" class="btn mt-4">submit</a> {% endcomment %}
+                                        <button type="submit" style="margin-top: 2%; margin-right: 25%;" class="btn mt-4">{% trans "Get A Webinar" %} &raquo;</button>
+                                        </form>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+</div>
+{% endblock %}
+
+
