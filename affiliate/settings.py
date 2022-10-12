@@ -24,10 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--7@m&j%9eq&me%v)t(fykyqhpcr88rx+vydi#zu)@iu#1oq0w*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-CSRF_TRUSTED_ORIGINS = ["https://powerful-basin-74576.herokuapp.com/"]
+ALLOWED_HOSTS = ['https://powerful-basin-74576.herokuapp.com', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
