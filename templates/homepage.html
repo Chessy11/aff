@@ -3,39 +3,11 @@
 {% load static %}
 {% block content %}
 
-<body id="bg" style="background-image: url('{% static 'img/btc.jpg' %}'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
-
-
-{% comment %} <div class="video-con" style="margin-left: 10%; margin-top: 15%;">
-<body>
-    <video
-      id="my-video"
-      class="video-js"
-      controls
-      preload="auto"
-      width="600"
-      height="264"
-      poster="{% static 'video/pr.png' %}"
-      data-setup="{}"
-    >
-      <source src="{% static 'video/Promo.mp4' %}" type="" />
-      <p class="vjs-no-js">
-
-        <a href="https://videojs.com/html5-video-support/" target="_blank"
-          >supports HTML5 video</a
-        >
-      </p>
-    </video>
-  
-    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
-  </body>
-  
-</div>
-<form action="{% url 'account_signup' %}">
-
-<button class="btton" style="margin-left: 38.5%; margin-top:1.5%;" action="{% url 'account_signup' %}">Get Your Webinar</button>
-
-</form> {% endcomment %}
+<body id="bg" style="background-image: url('{% static 'img/btc.jpg' %}');     background-size: cover;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-color: black;>
 
 <div class="wrapper">
     <div class="videocontent">
