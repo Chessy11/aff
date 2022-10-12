@@ -330,7 +330,7 @@ h6 span {
 /* full width background image */
 
 body {
-    background: url("/staticfiles/video/btc.c2bc0e7dc34a.jpg/") no-repeat center center fixed;
+    background: url("/static/video/btc.jpg/") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
