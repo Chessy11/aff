@@ -183,4 +183,7 @@ EMAIL_HOST_USER = 'zurabsx@gmail.com'
 EMAIL_HOST_PASSWORD = 'xvymljhseynrrqau'
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'  # !!!! very important for django-allauth specifically
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'  # !!!! very important for django-allauth specificallyimport django_heroku
+import django_heroku
+
+django_heroku.settings(locals())
