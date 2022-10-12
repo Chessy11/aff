@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure--7@m&j%9eq&me%v)t(fykyqhpcr88rx+vydi#zu)@iu#1oq0w*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://powerful-basin-74576.herokuapp.com/"]
+# CSRF_TRUSTED_ORIGINS = ["https://powerful-basin-74576.herokuapp.com/"]
 
 
 # Application definition
@@ -148,8 +149,6 @@ STATICFILES_DIRS = (
   os.path.join(BASE_DIR, 'static'),
 )
 
-CSRF_TRUSTED_ORIGINS = ["https://powerful-basin-74576.herokuapp.com/"]
-ALLOWED_HOSTS = ["https://powerful-basin-74576.herokuapp.com/"]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
