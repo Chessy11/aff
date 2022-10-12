@@ -65,9 +65,7 @@ MIDDLEWARE = [
 
 ]
 
-CORS_ORIGIN_WHITELIST = (
-    'https://powerful-basin-74576.herokuapp.com/',
-)
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'affiliate.urls'
 
