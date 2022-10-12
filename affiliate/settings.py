@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure--7@m&j%9eq&me%v)t(fykyqhpcr88rx+vydi#zu)@iu#1oq0w*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://powerful-basin-74576.herokuapp.com/"]
-# CSRF_TRUSTED_ORIGINS = ["https://powerful-basin-74576.herokuapp.com/"]
+ALLOWED_HOSTS = []
+CSRF_TRUSTED_ORIGINS = ["https://powerful-basin-74576.herokuapp.com/"]
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'import_export',
     'allauth.socialaccount',
     'users',
+    'corsheaders',
     'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -60,7 +61,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+
 ]
+
+CORS_ORIGIN_WHITELIST = (
+    'https://powerful-basin-74576.herokuapp.com/',
+)
 
 ROOT_URLCONF = 'affiliate.urls'
 
