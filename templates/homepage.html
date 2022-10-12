@@ -6,7 +6,7 @@
 <body id="bg" style="background-image: url('{% static 'img/btc.jpg' %}'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
 
 
-<div class="video-con" style="margin-left: 10%; margin-top: 15%;">
+{% comment %} <div class="video-con" style="margin-left: 10%; margin-top: 15%;">
 <body>
     <video
       id="my-video"
@@ -35,6 +35,25 @@
 
 <button class="btton" style="margin-left: 38.5%; margin-top:1.5%;" action="{% url 'account_signup' %}">Get Your Webinar</button>
 
-</form>
+</form> {% endcomment %}
+
+<div class="wrapper">
+    <div class="videocontent">
+        <video id="myvideo" class="video-js vjs-default-skin vjs-16-9 vjs-big-play-centered" controls
+        preload="auto" width="640" height="264" poster="{% static 'video/pr.png' %}"
+       data-setup="{}">
+       <source src="{% static 'video/Promo.mp4' %}" type="" />
+    </video>
+</div>
+</div>
+
+<form action="{% url 'account_signup' %}">
+
+    <button class="btton" action="{% url 'account_signup' %}">Get Your Webinar</button>
+    
+    </form>
+    
+
+
 </body>
 {% endblock %}
