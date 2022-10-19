@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<body id="bg" style="background-image: url('{% static 'img/btc.jpg' %}');     background-size: cover;">
+
+    <div class="card" style="width: 18rem; margin-top: 10%;">
+        <img class="card-img-top" src="{% static 'img/member1.png' %}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #007bff;">Johnathan Beverly</h5>
+          <p class="card-text">Johnathan is our lead consultant. he has all the answers for your questions</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem; margin-top: 10%; margin-left: 42%; margin-top: -33.1%;">
+        <img class="card-img-top" src="{% static 'img/member2.png' %}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #007bff;">Matt Nakashima</h5>
+          <p class="card-text">Matt is our lead business analitycs. he got all the winning strategies</p>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem; margin-top: 10%; margin-left: 85%; margin-top: -33.1%;">
+        <img class="card-img-top" src="{% static 'img/member3.png' %}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #007bff;">Susan Bouchard</h5>
+          <p class="card-text">Susan is our CEO she is able to manage our company around 4 years</p>
+        </div>
+      </div>
+
+{% endblock %}

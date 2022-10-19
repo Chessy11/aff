@@ -18,12 +18,15 @@ from django.urls import path
 from django.conf.urls import  include
 from django.conf import settings
 from django.conf.urls.static import static
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('', include('homepage.urls')),
-    
+    path('about/', views.about_us, name='about_us'),
+    path('whyus/', views.why_us, name='why_us'),
+    path('team/', views.team, name='team'),
 ]
 
 if settings.DEBUG:
