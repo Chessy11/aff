@@ -900,14 +900,15 @@ p {
     text-decoration: none;
 }
 
-.nav-item .nav-link,
+
+/* .nav-item .nav-link,
 .navbar {
     -webkit-transition: all 300ms ease 0s;
     -moz-transition: all 300ms ease 0s;
     -o-transition: all 300ms ease 0s;
     -ms-transition: all 300ms ease 0s;
     transition: all 300ms ease 0s;
-}
+} */
 
 .card a {
     -webkit-transition: all 150ms ease 0s;
@@ -1070,12 +1071,17 @@ p {
     font-size: 16px;
 }
 
-.navbar .navbar-nav .nav-item .nav-link:not(.btn):focus,
+.bg-light {
+    background-color: #f8f9fa3d !important;
+}
+
+
+/* .navbar .navbar-nav .nav-item .nav-link:not(.btn):focus,
 .navbar .navbar-nav .nav-item .nav-link:not(.btn):hover,
 .navbar .navbar-nav .nav-item .nav-link:not(.btn):active {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 0.1875rem;
-}
+} */
 
 .navbar .navbar-brand {
     text-transform: uppercase;
