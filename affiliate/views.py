@@ -9,3 +9,4 @@ def why_us(request):
 
 def team(request):
     return render(request, 'team/team.html')
+

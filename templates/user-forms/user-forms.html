@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<body id="bg" style="background-image: url('{% static 'img/btc.jpg' %}'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+<form id="form" method="POST" action="">
+	{% csrf_token %}
+	<h6>Fill The Form And Our Consultant Will Contact To You</h6>
+	<div class="form-group">
+	   <label for="name">Your Name</label>
+	   <br />
+	   <div class="input-group">
+		  <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i>            </div>
+		  {{ form.name }}		  
+		</div>
+	   </div>
+	<div class="form-group">
+	   <label for="last_name">Last Name</label>
+	   <br />
+	   <div class="input-group">
+		  <div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true">            </i></div>
+		  {{ form.last_name }}
+		</div>
+	   </div>
+	</div>
+	<div class="form-group">
+		<label for="phone2numeric">Your Email</label>
+		<br />
+		<div class="input-group">
+		   <div class="input-group-addon"><i class="fa fa-users" aria-hidden="true"></i>            </div>
+		   {{ form.email }}
+		 </div>
+		</div>
+	 </div>
+
+
+	<div class="form-group">
+	   <label for="phone2numeric">Your Phone Number</label>
+	   <br />
+	   <div class="input-group">
+		  <div class="input-group-addon"><i class="fa fa-users" aria-hidden="true"></i>            </div>
+		  {{ form.phone }}
+		</div>
+	   </div>
+	</div>
+	
+	<div class="form-group">
+	   <label for="choices">Experience In Crypto Trading </br>
+		(Choose One)</label>
+	   <br />
+	   <div class="input-group">
+		  <div class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i>            </div>
+
+		  {% comment %} <input type="text" id="password" placeholder="Yes Or No"/> {% endcomment %}
+		  {{ form.experience_in_crypto }}
+
+		</div>
+	   </div>
+	</div>
+	<div class="form-group">
+	   <label for="decide">What will be the starting investment </br> (If interested)</label>
+	   <br />
+	   <div class="input-group">
+		  <div class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i>            </div>
+		  {{ form.if_decided_to_invest }}
+		</div>
+	   </div>
+	</div>
+    {% if form.errors %}
+       {% for field in form %}
+           {% for error in field.errors %} 
+              <div class="alert alert-danger">
+                   <strong>{{ error|escape }}</strong>
+              </div>
+           {% endfor %}
+       {% endfor %}
+    {% endif %}
+
+	<button type="submit" class="btn btn-default" style="background-color: #FFFFFF;">Register</button>
+ </form>
+</body>
+{% endblock %}
+

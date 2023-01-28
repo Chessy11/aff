@@ -48,13 +48,15 @@
                     {{field}}
                     {% endfor %}
                     {% if redirect_field_value %}
+                   
                     <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
 
                     {% endif %}
                 </div>	
                 {% comment %} <a href="#" class="btn mt-4">submit</a> {% endcomment %}
-                <button type="submit"  class="btn mt-4">{% trans "Get A Webinar" %} &raquo;</button>
-                </form>      </div>
+                <button type="submit" class="btn mt-4">{% trans "Get A Webinar" %} &raquo;</button>
+                </form>     
+               </div>
               <!-- If you want to add a checkbox to this form, uncomment this code -->
               <!-- <div class="checkbox">
                                   <input id="checkboxSignup" type="checkbox">
@@ -72,5 +74,3 @@
   </div>
 </body>
 {% endblock %}
-
-

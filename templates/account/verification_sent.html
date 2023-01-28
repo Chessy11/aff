@@ -6,10 +6,21 @@
 {% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
 
 {% block content %}
-<body id="bg" style="background-image: url('{% static 'img/btc.jpg' %}'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+<body id="bg" style="background-image: url('{% static 'img/btc.jpg' %}'); background-size: cover; background-repeat: no-repeat; background-position: center center; margin-top: 80%;">
 
-    <h1>{% trans "Verify Your E-mail Address" %}</h1>
+<div class="container">
+    <div class="row justify-content-center">
 
-    <p>{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. If you do not see the verification e-mail in your main inbox, check your spam folder. Please contact us if you do not receive the verification e-mail within a few minutes.{% endblocktrans %}</p>
-</body>
+        <div class="col-md-8">
+
+            <h1 style="text-align: center; margin-top: -70%; color: red;">{% trans "Verify Your E-mail Address" %}</h1>
+
+            <p style="color: #008bff; margin-bottom: 28%; text-align: center; font-size: 26px;">{% blocktrans %}We have sent an e-mail to you for verification. Check your E-Mail.{% endblocktrans %}</p> 
+                        <p style="color: #008bff; margin-top: -26%; text-align: center; margin-bottom: 28%; font-size: 24px">If you do not see the verification e-mail in your main inbox, check your spam folder.</p>
+        {% comment %} Please contact us if you do not receive the verification e-mail within a few minutes.{% endblocktrans %}</p> {% endcomment %}
+        </div>
+    </div>
+</div>
+        </body>
+
 {% endblock %}
