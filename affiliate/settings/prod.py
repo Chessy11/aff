@@ -12,7 +12,7 @@ env = environ.Env(
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 
-ALLOWED_HOSTS = ['whale-app-8nxyk.ondigitalocean.app', 'localhost']
+ALLOWED_HOSTS = ['https://whale-app-8nxyk.ondigitalocean.app', 'localhost']
 
 SECRET_KEY =  env('SECRET_KEY')
 
