@@ -9,9 +9,9 @@
 
 <form id="form" method="POST" action="">
 	{% csrf_token %}
-	<h6>Fill The Form And Our Consultant Will Contact To You</h6>
+	<h6>Füllen Sie das Formular aus und unser Berater wird Sie kontaktieren.</h6>
 	<div class="form-group">
-	   <label for="name">Your Name</label>
+	   <label for="name">Ihr Name</label>
 	   <br />
 	   <div class="input-group">
 		  <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i>            </div>
@@ -19,7 +19,7 @@
 		</div>
 	   </div>
 	<div class="form-group">
-	   <label for="last_name">Last Name</label>
+	   <label for="last_name">Übername</label>
 	   <br />
 	   <div class="input-group">
 		  <div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true">            </i></div>
@@ -28,7 +28,7 @@
 	   </div>
 	</div>
 	<div class="form-group">
-		<label for="phone2numeric">Your Email</label>
+		<label for="phone2numeric">Ihre E-Mail</label>
 		<br />
 		<div class="input-group">
 		   <div class="input-group-addon"><i class="fa fa-users" aria-hidden="true"></i>            </div>
@@ -39,7 +39,7 @@
 
 
 	<div class="form-group">
-	   <label for="phone2numeric">Your Phone Number</label>
+	   <label for="phone2numeric">Ihre Telefonnummer</label>
 	   <br />
 	   <div class="input-group">
 		  <div class="input-group-addon"><i class="fa fa-users" aria-hidden="true"></i>            </div>
@@ -49,8 +49,8 @@
 	</div>
 	
 	<div class="form-group">
-	   <label for="choices">Experience In Crypto Trading </br>
-		(Choose One)</label>
+	   <label for="choices"> Erfahrung im Krypto-Handel </br>
+		(eine auswählen)</label>
 	   <br />
 	   <div class="input-group">
 		  <div class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i>            </div>
@@ -62,7 +62,7 @@
 	   </div>
 	</div>
 	<div class="form-group">
-	   <label for="decide">What will be the starting investment </br> (If interested)</label>
+	   <label for="decide">Was wird die Startinvestition sein </br> (falls interessiert)</label>
 	   <br />
 	   <div class="input-group">
 		  <div class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i>            </div>
@@ -80,7 +80,7 @@
        {% endfor %}
     {% endif %}
 
-	<button type="submit" class="btn btn-default" style="background-color: #FFFFFF;">Register</button>
+	<button type="submit" class="btn btn-default" style="background-color: #FFFFFF;">Registrieren</button>
  </form>
 </body>
 {% endblock %}
