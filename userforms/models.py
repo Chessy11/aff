@@ -31,6 +31,7 @@ class Contact(models.Model):
     name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100, default='None')
     email = models.EmailField(max_length=100)
+    # get phone number with country code
     phone = PhoneNumberField()
     experience_in_crypto = models.CharField(max_length=100, choices=CRYPTO_CHOICES, default='No')
     if_decided_to_invest = models.CharField(max_length=100, choices=DECIDED_TO_INVEST_CHOICES, default='500$')
@@ -40,6 +41,10 @@ class Contact(models.Model):
             raise ValidationError({'email': 'Email already exists'})
         elif Contact.objects.filter(phone=self.phone).exists():
             raise ValidationError({'phone': 'Phone number already exists'})
+        
+    def country_code(self):
+        return self.phone.country_code
+    country_code.short_description = 'Country code'
     
     
     
