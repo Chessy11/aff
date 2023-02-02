@@ -3,12 +3,7 @@
 {% load static %}
 {% block content %}
 <div class ="container">
-<body id="bg" style="background-image: url('{% static 'img/btc.jpg' %}');     background-size: cover;
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-color: black;">
-
+<body id="bg">
 <div class="wrapper">
     <div class="videocontent">
         <video id="myvideo" class="video-js vjs-default-skin vjs-16-9 vjs-big-play-centered" controls
@@ -18,10 +13,11 @@ background-color: black;">
     </video>
 </div>
 </div>
-
+</br>
+</br>
 <form action="{% url 'user_forms' %}">
 
-    <button class="btton" action="{% url 'account_signup' %}">Hast  Du  dein  Vebinar  schon  erhalten</button>
+    <button class="btton" action="{% url 'account_signup' %}">Hast Du dein Vebinar schon erhalten</button>
     
     </form>
     

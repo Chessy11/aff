@@ -5,12 +5,12 @@
 {% block content %}
 
 
-<body id="bg" style="background-image: url('{% static 'img/btc.jpg' %}'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+<body id="bg">
 
 <form id="form" method="POST" action="">
 	{% csrf_token %}
 	<h6>Füllen Sie das Formular aus und unser Berater wird Sie kontaktieren.</h6>
-	<div class="form-group">
+	<div class="form-group">   
 	   <label for="name">Ihr Name</label>
 	   <br />
 	   <div class="input-group">
